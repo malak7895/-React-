@@ -1,0 +1,197 @@
+/* =========================
+   PACKAGE SECTION
+========================= */
+
+.package-section {
+  width: 100%;
+  padding: 100px 30px;
+  background: #f7f7f7;
+}
+
+.package-container {
+  max-width: 1300px;
+  margin: auto;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  align-items: center;
+  gap: 70px;
+}
+
+/* =========================
+   CONTENT
+========================= */
+
+.package-content {
+  max-width: 550px;
+}
+
+.package-label {
+  display: inline-block;
+
+  margin-bottom: 18px;
+
+  font-size: 11px;
+  font-weight: 600;
+
+  letter-spacing: 3px;
+
+  color: #777;
+}
+
+.package-content h2 {
+  margin: 0 0 25px;
+
+  font-size: 52px;
+  line-height: 1.1;
+
+  font-weight: 600;
+
+  color: #111;
+}
+
+.package-content h2 span {
+  font-style: italic;
+  font-weight: 400;
+}
+
+.package-content > p {
+  max-width: 470px;
+
+  margin-bottom: 35px;
+
+  color: #666;
+
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+/* =========================
+   ITEMS
+========================= */
+
+.package-items {
+  display: flex;
+  gap: 35px;
+
+  margin-bottom: 40px;
+}
+
+.package-item {
+  display: flex;
+  flex-direction: column;
+
+  gap: 8px;
+}
+
+.package-item span {
+  font-size: 11px;
+  color: #999;
+}
+
+.package-item p {
+  margin: 0;
+
+  font-size: 13px;
+  font-weight: 500;
+
+  color: #222;
+}
+
+/* =========================
+   BUTTON
+========================= */
+
+.package-btn {
+  display: inline-block;
+
+  padding: 14px 28px;
+
+  background: #111;
+  color: #fff;
+
+  text-decoration: none;
+
+  font-size: 12px;
+  letter-spacing: 1px;
+
+  transition: 0.3s ease;
+}
+
+.package-btn:hover {
+  background: #333;
+}
+
+/* =========================
+   IMAGE
+========================= */
+
+.package-image {
+  width: 100%;
+  height: 550px;
+
+  overflow: hidden;
+}
+
+.package-image img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  display: block;
+
+  transition: transform 0.5s ease;
+}
+
+.package-image:hover img {
+  transform: scale(1.03);
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 900px) {
+
+  .package-container {
+    grid-template-columns: 1fr;
+
+    gap: 50px;
+  }
+
+  .package-content {
+    max-width: 100%;
+  }
+
+  .package-image {
+    height: 500px;
+  }
+
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+  .package-section {
+    padding: 70px 20px;
+  }
+
+  .package-content h2 {
+    font-size: 38px;
+  }
+
+  .package-items {
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  .package-image {
+    height: 400px;
+  }
+
+}
